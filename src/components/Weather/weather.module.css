@@ -1,0 +1,85 @@
+
+.Weather{
+    width: 100%;
+    height: 100%;
+}
+.Alignment{
+    text-align: center;
+    padding: 40px;
+}
+h2{
+    display: inline;
+    font-weight: 400;
+}
+input{
+
+    border: none;
+    border-bottom: 1px solid;
+    height: 30px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0);
+    margin:0px 20px;
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    color: azure;
+    background-color: #333;
+    font-size: 18px;
+}
+footer a{
+    color: azure;
+    text-decoration: none;
+}
+input:focus{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.Label{
+    margin-right: 20px;
+    font-size: 24px;
+    
+}
+
+.Searchbtn{
+    height: 35px;
+    font-size: 18px;
+    background-color: rgb(36, 226, 137);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    letter-spacing: 1px;
+    padding: 0px 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h2{
+        display: inline;
+        font-size: 34px;
+        font-weight: 400;
+    }
+    input{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 425px) {
+    h2{
+        display: inline;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    input{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+}

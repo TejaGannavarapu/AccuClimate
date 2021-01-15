@@ -1,0 +1,62 @@
+.Section{
+    text-align: center;
+    width: 60%;
+    margin: 20px 20%;
+    border-radius: 50px;
+    padding-top: 30px;
+    box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
+    background-color: rgba(221, 215, 209, 0.65);
+
+}
+.Section1{
+    display: inline;
+    margin: 0px 20%;
+    float: left;
+}
+.Section2{
+    display: inline;
+}
+
+@media only screen and (max-width:768px){
+    .Section{
+        width: 80%;
+        margin: 20px 80px; 
+    }
+    .Section1{
+        margin: 0px 15%;
+    }
+   
+}
+
+@media only screen and (max-width:425px){
+    .Section{
+        
+        width: 80%;
+        margin: 20px 10%;
+       
+    }
+    .Section1{
+        margin: 0px 20%;
+    }
+    .Section2{
+       position: relative;
+       left: 20%;
+    }
+}
+
+
+@media only screen and (max-width:375px){
+    .Section{
+        
+        width: 80%;
+        margin: 20px 10%;
+       
+    }
+    .Section1{
+        margin: 0px 20%;
+    }
+    .Section2{
+       position: relative;
+       left: 20%;
+    }
+}

@@ -1,0 +1,90 @@
+.Row{
+    text-align: center;
+}
+.Todaycard{
+    text-align: center;
+    width: 80%;
+    margin: 0px 10%;
+    border-radius: 50px;
+    padding-top: 10px;
+    box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
+    background-color: rgba(230, 224, 217, 0.65);
+}
+.Locationdata{
+    width: auto;
+    margin: 0px 40px;
+}
+.Weatherdata{
+    text-align: center;
+}
+.Location{
+    font-size: 50px;
+    margin: 0px;
+}
+.Country{
+    font-size: 35px;
+}
+span{
+    display: block;
+}
+.Day{
+    font-size: 30px;
+}
+.Temp{
+    font-size: 90px;
+    display: inline;
+}
+.Type{
+    font-size: 22px;
+    display: block;
+    padding: 10px 20px;
+    position: relative;
+    left : 80px;
+    bottom: 40px;
+}
+.Time{
+    font-size: 20px;
+}
+.Sup{
+    font-size: 40px;
+}
+.Metric{
+    font-size: 70px;
+    display: inline;
+}
+.Weatherdata img{
+    padding: 0px 10px;
+    position: relative;
+    top: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+@media only screen and (max-width: 425px) {
+    .Location{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .Location{
+        font-size: 30px;
+        margin: 0px;
+    }
+    .Type{
+        font-size: 22px;
+        display: block;
+        padding: 10px 0px;
+        position: relative;
+        bottom: 20px;
+        left: 1px;
+    }
+    .Weatherdata img{
+        padding: 0px 10px;
+        position: relative;
+        top: 10px;
+        height: 90px;
+        width: 90px;
+    }
+}
