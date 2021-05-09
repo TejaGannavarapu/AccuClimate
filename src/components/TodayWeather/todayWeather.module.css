@@ -1,15 +1,19 @@
-.Row{
+.Summary{
+    display: flex;
+    width: 100%;
     text-align: center;
 }
 .Todaycard{
     text-align: center;
-    width: 80%;
-    margin: 0px 10%;
-    border-radius: 50px;
+    width: 48%;
+    height: 320px;
+    border-radius: 16px;
     padding-top: 10px;
-    box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-    background-color: rgba(230, 224, 217, 0.65);
+    /* box-shadow:  5px 10px 10px 5px rgb(95, 93, 93); */
+    background-color: rgba(228, 223, 217, 0.65);
+    margin: 0px 12px;
 }
+
 .Locationdata{
     width: auto;
     margin: 0px 40px;
@@ -59,7 +63,17 @@ span{
     height: 90px;
     width: 90px;
 }
+@media only screen and (max-width: 768px) {
+    .Summary{
+        display: block;
+    }
+    .Todaycard{
+        width: 90%;
+        margin: 6px auto;
+    }
 
+
+}
 @media only screen and (max-width: 425px) {
     .Location{
         font-size: 30px;

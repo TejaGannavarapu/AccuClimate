@@ -12,7 +12,7 @@ const Weather= (props)=> {
         country: ""
     });
     const [weatherData,setData]= useState([]); 
-    const [loading,setLoading]= useState(false);
+    const [click,setClicked]= useState(false);
     const [error,setError]= useState(true);
 
     var apiKey= "0ffa9cd06b44a5813fc38bc672462748";
@@ -38,7 +38,6 @@ const Weather= (props)=> {
 
     async function getWeatherData(e){
         e.preventDefault();
-        setLoading(true);
         setError(false);
         let data= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${form.city.trim()},${form.country}&appid=${apiKey}`)
                     .then(res=> {
@@ -50,7 +49,7 @@ const Weather= (props)=> {
          setData({
              data: data
         });
-        setLoading(false);
+        
     }
     return (
 
@@ -64,10 +63,10 @@ const Weather= (props)=> {
                         <button className={classes.Searchbtn} type="submit" onClick={(e)=> {getWeatherData(e)}}>Search</button>
                     </form>
             </div>
-            { weatherData.data!== undefined ? <WeatherUI data={weatherData.data} loading={loading} city={form.city} APIKEY={apiKey}/> : <Defaultpage/>}
+            { weatherData.data!== undefined ? <WeatherUI data={weatherData.data} city={form.city} APIKEY={apiKey}/> : <Defaultpage/>}
             <footer>
                 <p>AccuCLimate<br/>
-                <a href="mailto:hege@example.com">hege@example.com</a></p>
+                <a href="mailto:hege@example.com">accuClimate.com</a></p>
             </footer>
         </div>
     )

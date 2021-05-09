@@ -29,16 +29,11 @@ const WeatherUI= (props)=> {
                 daysData: daysData
             });
         }
-        
-        console.log(forecastData.daysData);
         setShow(!available);
-        
     }
-
-    
     return(
         
-        <div>
+        <div className={classes.Con}>
             {data.cod != "404"? (
             <div>
                 <TodayWeather data={data}/>
@@ -49,7 +44,7 @@ const WeatherUI= (props)=> {
             </div>
                 
             ) : (
-                <div className={classes.Error}><p>{data.message}</p></div>
+                <div className={classes.Error}><p >{data.message}</p></div>
             )}
             
         </div>

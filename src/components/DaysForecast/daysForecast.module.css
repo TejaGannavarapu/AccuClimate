@@ -1,177 +1,31 @@
 .Container{
-    text-align: center;
+    width: 100%;
 }
 .Row{
-    margin: 30px 15%;
-    width: 80%;
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    align-items: center;
+}
+.Col{
+    width: 15%;
+    height: 207.33px;
+    margin: 7px;
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.685);
     color: #fff;
 }
-.Col1,.Col2,.Col3,.Col4{
-    float: left;
-    display: inline;
-    width: 14%;
-    padding: 10px;
-    box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-    background-color: rgba(5, 5, 5, 0.685);
-    margin-right: 20px;
-}
-.Col5{
-    display: inline;
-    width: 14%;
-    float: left;
-    padding: 10px;
-    box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-    background-color: rgba(5, 5, 5, 0.685);;
-}
-
-.Temp{
-    font-size: 26px;
-    display: inline;
-}
-
-
-@media only screen and (max-width:768px){
+@media only screen and (max-width: 768px){
     .Row{
-        margin: 30px 10%;
-        width: 80%;
-        content: "";
-        display: table;
-        clear: both;
-        color: #fff;
+        display: block;  
     }
-    .Col1,.Col2,.Col3,.Col4{
-        float: left;
-        display: inline;
-        width: 14%;
-        padding: 10px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        margin-right: 20px;
+    .Col{
+        width: 60%;
+        margin: 10px auto;
+        height: auto;
     }
-    .Col5{
-        display: inline;
-        width: 14%;
-        float: left;
-        padding: 10px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);;
+    .Temp{
+        font-size: 50px;
     }
     
-   
-}
-
-@media only screen and (max-width: 425px){
-    .Container{
-        text-align: center;
-        margin: 0px 0px 0px 10%;
-    }
-    .Row{
-        width: 90%;
-        color: #fff;
-        text-align: left;
-    }
-    .Col1,.Col2,.Col3,.Col4{
-        width: 80%;
-        margin: 0px 0px 10px 0px;
-        padding: 10px 0px 10px 20px;
-        height: 100px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        position: relative;
-        right: 10px;
-    }
-    .Col5{
-        width: 80%;
-        margin: 0px 0px 10px 0px;
-        padding: 10px 0px 10px 20px;
-        height: 100px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        position: relative;
-        right: 10px;
-    }
-    .Col1 img,.Col2 img,.Col3 img,.Col4 img,.Col5 img{
-        transform: translate(260%,-120%);
-    }
-    .Type{
-        transform: translateY(-400%);
-    }
-}
-
-@media only screen and (max-width: 375px){
-    .Container{
-        text-align: center;
-    }
-    .Row{
-        width: 90%;
-        color: #fff;
-        text-align: left;
-    }
-    .Col1,.Col2,.Col3,.Col4{
-        width: 80%;
-        margin: 0px 0px 10px 0px;
-        padding: 10px;
-        height: 100px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        position: relative;
-        right: 10px;
-    }
-    .Col5{
-        width: 80%;
-        margin: 0px 0px 10px 0px;
-        padding: 10px;
-        height: 100px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        position: relative;
-        right: 10px;
-    }
-    .Col1 img,.Col2 img,.Col3 img,.Col4 img,.Col5 img{
-        transform: translate(230%,-120%);
-    }
-    .Type{
-        transform: translateY(-400%);
-    }
-}
-
-@media only screen and (max-width: 320px){
-    .Container{
-        text-align: center;
-    }
-    .Row{
-        width: 90%;
-        color: #fff;
-        text-align: left;
-    }
-    .Col1,.Col2,.Col3,.Col4{
-        width: 80%;
-        margin: 0px 0px 10px 0px;
-        padding: 10px;
-        height: 100px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        position: relative;
-        right: 10px;
-    }
-    .Col5{
-        width: 80%;
-        margin: 0px 0px 10px 0px;
-        padding: 10px;
-        height: 100px;
-        box-shadow:  5px 10px 10px 5px rgb(141, 140, 140);
-        background-color: rgba(5, 5, 5, 0.685);
-        position: relative;
-        right: 10px;
-    }
-    .Col1 img,.Col2 img,.Col3 img,.Col4 img,.Col5 img{
-        transform: translate(230%,-120%);
-    }
-    .Type{
-        transform: translateY(-400%);
-    }
-}
-
+} 

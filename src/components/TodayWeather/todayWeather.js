@@ -3,7 +3,6 @@ import classes from "./todayWeather.module.css";
 import WeatherDetails from '../Weatherdetails/weatherDetails';
 
 const todayWeather= (props)=>  {
-    console.log(props);
     var {data}= props;
     var iconurl= "http://openweathermap.org/img/wn/" + `${props.data.weather[0].icon}` + ".png";
     var d = new Date();
@@ -18,7 +17,7 @@ const todayWeather= (props)=>  {
 
     var n = weekday[d.getDay()];
     return(
-        <div className={classes.Row}>
+        <div className={classes.Summary}>
             <div className={classes.Todaycard}>
                 <div className={classes.Locationdata}>
                     <p className={classes.Location}>{props.data.name},<span className={classes.Country}>{props.data.sys.country}</span>
@@ -34,9 +33,7 @@ const todayWeather= (props)=>  {
                 </div>
                 
             </div>
-            <div>
-                <WeatherDetails data={data}/>
-            </div>
+            <WeatherDetails data={data}/>
         </div>
     )
 }

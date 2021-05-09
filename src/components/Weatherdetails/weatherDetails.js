@@ -2,12 +2,25 @@ import react from 'react';
 import classes from "./weatherDetails.module.css";
 
 const weatherDetails= (props)=> {
+    var {data}= props;
+    var iconurl= "http://openweathermap.org/img/wn/" + `${props.data.weather[0].icon}` + ".png";
+    var d = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    var n = weekday[d.getDay()];
     return(
         <div className={classes.Section}>
             <div className={classes.Section1}>
             <table>
                 <tr>
-                    <td><h4>High/Low: </h4></td>
+                    <td><h4 classNam={classes.head}>High/Low: </h4></td>
                     <td><span>{Math.floor(props.data.main.temp_max-273.15)}/{" "}
                         {Math.floor(props.data.main.temp_min-273.15)} C </span></td>
                 </tr>
