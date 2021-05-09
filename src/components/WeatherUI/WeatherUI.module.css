@@ -16,7 +16,8 @@
     color: rgba(2, 2, 2, 0.719);
     letter-spacing: 1px;
     padding: 0px 10px;
-    border-radius: 30px;
+    border-radius: 18px;
+    cursor: pointer;
 }
 .Error{
     text-align: center;

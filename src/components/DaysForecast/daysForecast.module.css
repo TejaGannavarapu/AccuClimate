@@ -15,6 +15,10 @@
     background-color: rgba(5, 5, 5, 0.685);
     color: #fff;
     padding-top: 10px;
+    transition: transform .2s;
+}
+.Col:hover{
+    transform: scale(1.1);
 }
 .Temp{
     font-size: 26px;
@@ -25,7 +29,7 @@
     }
     .Col{
         width: 60%;
-        margin: 10px auto;
+        margin: 15px auto;
         height: auto;
         padding: 10px 0px;
     }
