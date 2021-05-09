@@ -27,7 +27,7 @@ h1{
     .Loader{
         text-align: center;
         width: 90%;
-        border-radius: 45px;
+        border-radius: 16px;
         padding-top: 10px;
         background-color: rgba(238, 236, 234, 0.65);  
         margin: 0px auto;
