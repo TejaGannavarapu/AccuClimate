@@ -22,59 +22,30 @@ h1{
     padding: 0px 0px 30px 30px;
 }
 
+
 @media only screen and (max-width: 425px) {
     .Loader{
         text-align: center;
         width: 90%;
-        margin: 1% 5%;
         border-radius: 45px;
         padding-top: 10px;
-        box-shadow:  0px 5px 5px 5px rgb(141, 140, 140);
-        background-color: rgba(238, 236, 234, 0.65);   
+        background-color: rgba(238, 236, 234, 0.65);  
+        margin: 0px auto;
     }
     
     h1{
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 400;
     }
 
     .Tagline{
-        font-size: 26px;
+        font-size: 20px;
     }
     
     .Herotext{
-        font-size: 18px;
-        text-align: left;
-        padding: 0px 0px 30px 20px;
-    }
-
-}
-
-
-@media only screen and (max-width: 375px) {
-    .Loader{
+        font-size: 13px;
+        padding: 0px 0px 30px 0px;
         text-align: center;
-        width: 90%;
-        margin: 1% 5%;
-        border-radius: 45px;
-        padding-top: 10px;
-        box-shadow:  0px 5px 5px 5px rgb(141, 140, 140);
-        background-color: rgba(238, 236, 234, 0.65);   
-    }
-    
-    h1{
-        font-size: 36px;
-        font-weight: 400;
-    }
-
-    .Tagline{
-        font-size: 26px;
-    }
-    
-    .Herotext{
-        font-size: 18px;
-        text-align: left;
-        padding: 0px 0px 30px 20px;
     }
 
 }

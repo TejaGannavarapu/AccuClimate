@@ -1,11 +1,13 @@
 .Container{
     width: 100%;
+    
 }
 .Row{
     display: flex;
     justify-content: center;
     margin: 0px 20px;
     align-items: center;
+    
 }
 .Col{
     width: 15%;

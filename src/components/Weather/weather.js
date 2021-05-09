@@ -38,6 +38,7 @@ const Weather= (props)=> {
 
     async function getWeatherData(e){
         e.preventDefault();
+        setClicked(true);
         setError(false);
         let data= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${form.city.trim()},${form.country}&appid=${apiKey}`)
                     .then(res=> {
@@ -49,7 +50,7 @@ const Weather= (props)=> {
          setData({
              data: data
         });
-        
+        setClicked(false);
     }
     return (
 
@@ -63,6 +64,7 @@ const Weather= (props)=> {
                         <button className={classes.Searchbtn} type="submit" onClick={(e)=> {getWeatherData(e)}}>Search</button>
                     </form>
             </div>
+            {click? <Spinner/> : null}
             { weatherData.data!== undefined ? <WeatherUI data={weatherData.data} city={form.city} APIKEY={apiKey}/> : <Defaultpage/>}
             <footer>
                 <p>AccuCLimate<br/>
