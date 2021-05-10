@@ -22,7 +22,7 @@
 .Error{
     text-align: center;
     width: 80%;
-    margin: 0px 5%;
+    margin: 0px 5% 10% 5%;
     padding: 40px;
     border-radius: 16px;
     background-color: rgba(204, 190, 173, 0.65);
