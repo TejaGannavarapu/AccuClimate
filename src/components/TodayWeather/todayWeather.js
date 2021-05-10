@@ -26,9 +26,10 @@ const todayWeather= (props)=>  {
                     <span className={classes.Time}>{new Date().toLocaleTimeString()}</span>
                 </div>
                 <div className={classes.Weatherdata}>
-                    <span className={classes.Temp}>{Math.floor(props.data.main.temp-273)}<sup className={classes.Sup} >o</sup><span className={classes.Metric}>C</span></span>
+                <span className={classes.Type}>{props.data.weather[0].description}</span>
                     <img src={iconurl} alt="icon"></img>
-                    <span className={classes.Type}>{props.data.weather[0].description}</span>
+                    <span className={classes.Temp}>{Math.floor(props.data.main.temp-273)}<sup className={classes.Sup} >o</sup><span className={classes.Metric}>C</span></span>
+                   
 
                 </div>
                 
