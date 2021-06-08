@@ -19,6 +19,7 @@ const Weather= (props)=> {
 
     const changeHandler= (event)=> {
         event.preventDefault();
+        console.log(event.target);
         let {name,value}= event.target;
         if(name=== "city"){
             setForm({
@@ -61,7 +62,7 @@ const Weather= (props)=> {
                         <label className={classes.Label}><h2>Enter Location:</h2></label>
                         <input type="text" name="city" autoComplete="off" placeholder="Enter city" onChange= {(event)=> changeHandler(event) } required></input>
                         
-                        <button className={classes.Searchbtn} type="submit" onClick={(e)=> {getWeatherData(e)}}>Search</button>
+                        <button className={classes.Searchbtn} type="submit" onClick={(e)=> getWeatherData(e)}>Search</button>
                     </form>
             </div>
             {click? <Spinner/> : null}
